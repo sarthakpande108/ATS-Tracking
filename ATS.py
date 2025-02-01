@@ -9,7 +9,7 @@ import json  # Import JSON module for parsing
 load_dotenv()
 
 # Configure Gemini API
-genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
+genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
 
 # Function to extract text from PDF
 def input_pdf_text(upload_file):
